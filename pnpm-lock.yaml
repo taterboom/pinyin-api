@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@napi-rs/pinyin': ^1.7.1
   '@next/font': 13.1.6
   '@types/node': 18.13.0
   '@types/react': 18.0.28
@@ -10,9 +11,11 @@ specifiers:
   next: 13.1.6
   react: 18.2.0
   react-dom: 18.2.0
+  swr: ^2.0.3
   typescript: 4.9.5
 
 dependencies:
+  '@napi-rs/pinyin': 1.7.1
   '@next/font': 13.1.6
   '@types/node': 18.13.0
   '@types/react': 18.0.28
@@ -22,6 +25,7 @@ dependencies:
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  swr: 2.0.3_react@18.2.0
   typescript: 4.9.5
 
 packages:
@@ -68,6 +72,149 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: false
+
+  /@napi-rs/pinyin-android-arm-eabi/1.7.1:
+    resolution: {integrity: sha512-Dhvhz3qm3SJoPQUd2wEnUFQH0OizjBkUQOEGPcyGIpwbdyS5tVppxuAC7dO+iUh9F/uvhtKwoibDdLiupqdptw==}
+    engines: {node: '>= 10.0'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-android-arm64/1.7.1:
+    resolution: {integrity: sha512-h+qYBRDu7mUkKiOPRaZmNUPdlxfbURUggKqncYUlV2TmHAALfoPBPoT3DD8ClQXVax1eYp4UWSloRA3hUxFLcQ==}
+    engines: {node: '>= 10.0'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-darwin-arm64/1.7.1:
+    resolution: {integrity: sha512-5NYFZT6PtBtO02N23vG1pcCGnDlwjlYFaq7I/V6pbI5reGDzP6Xg1TqnK635jb0AgC2yM9ojjBfR5kJYViPQTQ==}
+    engines: {node: '>= 10.0'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-darwin-x64/1.7.1:
+    resolution: {integrity: sha512-xomDqZC7qAmBCAqPPKgvhJRUreCgVLIa7KHdP1kMq3iOJD99ZoV9fkf8EHP54Ia5zNxUVgGSUOcEA8BwLwT1ig==}
+    engines: {node: '>= 10.0'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-freebsd-x64/1.7.1:
+    resolution: {integrity: sha512-nGZhpA2vyTWPKguGFKMWUo8zFwPhgwNyVqVDF6T+djgzi6VKr3IUQHX5vs2lWyQixPxkrq4oxPHISvy+nHyrcg==}
+    engines: {node: '>= 10.0'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-linux-arm-gnueabihf/1.7.1:
+    resolution: {integrity: sha512-PfCuDa8S0Zh2QSOoVnowlHb7j/XkaZtRDq7GoqS7Hy4cuXDM00pHVclh9C5RfbEPQ8Nefz9ryeyYItYxaRt7Qg==}
+    engines: {node: '>= 10.0'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-linux-arm64-gnu/1.7.1:
+    resolution: {integrity: sha512-ay+tonSYDRhJDy95fRtXsu5wDyMcf3v2qxqVKG69ly8PW2ekbGTKLSJILJbhFx5NOwyB6DcmiFZvZQqlpaWNKQ==}
+    engines: {node: '>= 10.0'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-linux-arm64-musl/1.7.1:
+    resolution: {integrity: sha512-wR3FOgewIoGeB9HsGqB2AZBzC+G1QKviPSG9BD5joXSsffcekhG47/aWvy4bnILF1gCDf1SGDo4o4WMRlpD+oQ==}
+    engines: {node: '>= 10.0'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-linux-x64-gnu/1.7.1:
+    resolution: {integrity: sha512-p+S9kmdZlTtv4UVpCoyhHZRZ7WcuHY5OOAniWoBn9S3pq2ac8ptX9zvZkqwJ4jUvaeoXOQKqKNQnJTw05ECfSA==}
+    engines: {node: '>= 10.0'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-linux-x64-musl/1.7.1:
+    resolution: {integrity: sha512-qfpbsIHw9wdzdm6YyrUhgKwCyHl4eutOIcJDWRZcvVeuxaFwaYiSTyhn57uMCVkk/M4zTLFW+iUZra6a9tDw/g==}
+    engines: {node: '>= 10.0'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-win32-arm64-msvc/1.7.1:
+    resolution: {integrity: sha512-MNorAzMFmmPxqq3pzJGQ11fV/cGuKD8AQfZ2r0es32+4oQX/Ke6HF1CRr1ijG9ERyhCz1H0U4BnjUTwadpjjcQ==}
+    engines: {node: '>= 10.0'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-win32-ia32-msvc/1.7.1:
+    resolution: {integrity: sha512-LraMduh848NTS+EpVRI8ufCWoCucbDOyq8GL874aaKL514xqMSgRWaPMEz7WkDE0R/8egpJK9eA6N7pDBpF92w==}
+    engines: {node: '>= 10.0'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin-win32-x64-msvc/1.7.1:
+    resolution: {integrity: sha512-W5hKb0AusXieCDot4O1SOTee1u46vKkHZ/vhdJqudzSubNmb6mQgMxSxPkfLMEvm+1hchOzrwVO0xCVtrLW1bw==}
+    engines: {node: '>= 10.0'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@napi-rs/pinyin/1.7.1:
+    resolution: {integrity: sha512-+Mutbfd28IPXFqK1MQIhzVn1riPuKPVDDfRvn1aN1o17xmWShE5orRr43UFdVVAsnagrgT9yvbXeAS7GwUYGZw==}
+    engines: {node: '>= 10.0'}
+    requiresBuild: true
+    dependencies:
+      '@napi-rs/triples': 1.1.0
+    optionalDependencies:
+      '@napi-rs/pinyin-android-arm-eabi': 1.7.1
+      '@napi-rs/pinyin-android-arm64': 1.7.1
+      '@napi-rs/pinyin-darwin-arm64': 1.7.1
+      '@napi-rs/pinyin-darwin-x64': 1.7.1
+      '@napi-rs/pinyin-freebsd-x64': 1.7.1
+      '@napi-rs/pinyin-linux-arm-gnueabihf': 1.7.1
+      '@napi-rs/pinyin-linux-arm64-gnu': 1.7.1
+      '@napi-rs/pinyin-linux-arm64-musl': 1.7.1
+      '@napi-rs/pinyin-linux-x64-gnu': 1.7.1
+      '@napi-rs/pinyin-linux-x64-musl': 1.7.1
+      '@napi-rs/pinyin-win32-arm64-msvc': 1.7.1
+      '@napi-rs/pinyin-win32-ia32-msvc': 1.7.1
+      '@napi-rs/pinyin-win32-x64-msvc': 1.7.1
+    dev: false
+
+  /@napi-rs/triples/1.1.0:
+    resolution: {integrity: sha512-XQr74QaLeMiqhStEhLn1im9EOMnkypp7MZOwQhGzqp2Weu5eQJbpPxWxixxlYRKWPOmJjsk6qYfYH9kq43yc2w==}
     dev: false
 
   /@next/env/13.1.6:
@@ -2005,6 +2152,16 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
+  /swr/2.0.3_react@18.2.0:
+    resolution: {integrity: sha512-sGvQDok/AHEWTPfhUWXEHBVEXmgGnuahyhmRQbjl9XBYxT/MSlAzvXEKQpyM++bMPaI52vcWS2HiKNaW7+9OFw==}
+    engines: {pnpm: '7'}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
   /synckit/0.8.5:
     resolution: {integrity: sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -2102,6 +2259,14 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
+    dev: false
+
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /which-boxed-primitive/1.0.2:
