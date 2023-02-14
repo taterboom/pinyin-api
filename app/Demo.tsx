@@ -1,14 +1,31 @@
 "use client"
-import { useState } from "react"
+import { useDeferredValue, useEffect, useState } from "react"
 import useSWR from "swr"
+
+function useDebounce<T>(value: T, delay = 300) {
+  const [debouncedValue, setDebouncedValue] = useState(value)
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value)
+    }, delay)
+
+    return () => {
+      clearTimeout(handler)
+    }
+  }, [value, delay])
+
+  return debouncedValue
+}
 
 // @ts-ignore
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 function Result(props: { query: string }) {
-  const { data, error, isLoading } = useSWR(`/api/generate?wd=${props.query}`, fetcher)
-  if (error) return <div>failed to load</div>
-  if (isLoading) return <div>loading...</div>
+  const query = useDebounce(props.query)
+  const { data, error, isLoading } = useSWR(`/api/generate?wd=${query}`, fetcher)
+  if (error) return <div></div>
+  if (!data) return <div>loading...</div>
   return <div>{JSON.stringify(data)}</div>
 }
 
