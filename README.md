@@ -1,6 +1,6 @@
 # Pinyin API
 
-API wrapper of [@napi-rs/pinyin](https://github.com/Brooooooklyn/pinyin)
+An API wrapper of [@napi-rs/pinyin](https://github.com/Brooooooklyn/pinyin) can be used to convert Chinese characters to pinyin
 
 ## Usage
 
